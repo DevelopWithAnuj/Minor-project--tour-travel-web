@@ -155,7 +155,7 @@ button:hover {
 .hero {
   height: 90vh;
   position: relative;
-  background: url("/travel-blog/assests/login-bg.avif") center/cover;
+  background: url("assests/login-bg.avif") center/cover;
   display: flex;
   color: white;
   text-align: center;
@@ -210,7 +210,7 @@ button:hover {
       rgba(0, 0, 0, 0.35),
       rgba(0, 0, 0, 0.25)
     ),
-    url("/travel-blog/assests/thland-bg.avif?auto=format&fit=crop&w=1800&q=80");
+    url("assests/thland-bg.avif?auto=format&fit=crop&w=1800&q=80");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -671,7 +671,7 @@ button:hover {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.35)
     ),
-    url("/travel-blog/assests/showc.jpg?auto=format&fit=crop&w=1600&q=80");
+    url("assests/showc.jpg?auto=format&fit=crop&w=1600&q=80");
   background-size: cover;
   background-position: center;
   border-radius: 16px;
@@ -794,7 +794,7 @@ button:hover {
   position: relative;
   overflow: hidden;
 
-  background: url("/travel-blog/assests/taj-bg.avif") center / cover no-repeat;
+  background: url("assests/taj-bg.avif") center / cover no-repeat;
   box-shadow: 0 40px 80px rgba(0, 0, 0, 0.35);
   color: #fff;
 }
