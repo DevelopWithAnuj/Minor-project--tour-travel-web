@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel | WanderLog</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <h1 class="logo">WanderLog</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <button onclick="logout()" class="logout-btn">Logout</button>
+      </nav>
+    </header>
+
+    <div class="admin-container">
+      <h2>✍️ Add New Blog</h2>
+
+      <form class="admin-form" onsubmit="handleAddBlog(event)">
+        <div class="form-group">
+          <input id="title" type="text" placeholder="Blog Title" required />
+          <label>Title</label>
+        </div>
+
+        <div class="form-group">
+          <input type="file" id="imageFile" accept="image/*" required />
+          <label>Image</label>
+        </div>
+
+        <img id="preview" class="preview hidden" alt="Preview" />
+
+        <div class="form-group">
+          <textarea
+            id="content"
+            placeholder="Blog Content (min 50 characters)"
+            required
+          ></textarea>
+          <label>Content</label>
+        </div>
+
+        <button type="submit" class="btn-primary">Add Blog</button>
+      </form>
+    </div>
+
+    <div id="pageLoader">
+      <div class="page-spinner"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 WanderLog | Admin Panel</p>
+    </footer>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
