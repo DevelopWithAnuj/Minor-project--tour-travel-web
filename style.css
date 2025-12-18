@@ -430,6 +430,231 @@ button:hover {
   box-shadow: 0 8px 20px rgba(243, 156, 18, 0.3);
 }
 
+.blog-body {
+  padding: 20px;
+}
+
+.blog-body h3 {
+  margin-bottom: 8px;
+}
+
+.blog-body p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 20px;
+}
+
+.blog-detail-container {
+  max-width: 900px;
+  margin: 100px auto 40px;
+  padding: 0 16px;
+}
+
+.blog-detail-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.04)
+  );
+  border-radius: 18px;
+  overflow: hidden;
+  animation: fadeUp 0.6s ease;
+  border: 1px solid rgba(250, 204, 21, 0.1);
+}
+
+.blog-detail-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.blog-detail-body {
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: #e5e7eb;
+}
+.blog-detail-body {
+  padding: 30px 25px;
+}
+
+.blog-detail-body h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #f59e0b, #facc15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blog-detail-body .read-time {
+  opacity: 0.7;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.blog-detail-body p {
+  line-height: 1.9;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.blog-card:hover img {
+  transform: scale(1.1);
+}
+/* ========================================
+   BLOGS SECTION STYLING
+   ======================================== */
+.blog-card {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.blogs-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f0f2f5; /* Matches body background */
+}
+
+.blogs-section .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.blogContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: slideUp 0.6s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card .img-wrap {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.blog-card .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .img-wrap img {
+  transform: scale(1.05);
+}
+
+.blog-card .read-time {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(243, 156, 18, 0.9);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.blog-card .blog-body {
+  padding: 20px;
+}
+
+.blog-card .blog-body h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.blog-card .blog-body p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.blog-card .blog-footer {
+  padding: 0 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog-card .like-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  color: #999;
+}
+
+.blog-card .like-btn:hover {
+  background: rgba(243, 156, 18, 0.1);
+  color: #f39c12;
+}
+
+.blog-card .like-btn.liked {
+  color: #f39c12;
+}
+
+.blog-card .read-btn {
+  background: #f39c12;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  flex: 1;
+  text-align: center;
+}
+
+.blog-card .read-btn:hover {
+  background: #e67e22;
+  transform: translateX(2px);
+}
+
 .showcase {
   position: relative;
   min-height: 500px;
